@@ -262,6 +262,14 @@ int main() {
 
         //If user enters a number that is not 1 -4 give an error. 
 
+
+
+        questionMap.erase(randomQuestion);
+
+        multipleChoice.erase(randomQuestion);
+
+        correctChoice.erase(randomQuestion);
+ 
         if (guessedNum < 1 || guessedNum > 4) {
 
             cout << "Invalid Choice" << endl;
@@ -293,13 +301,6 @@ int main() {
 
         }
 
-
-
-        questionMap.erase(randomQuestion);
-
-        multipleChoice.erase(randomQuestion);
-
-        correctChoice.erase(randomQuestion);
 
 
 
